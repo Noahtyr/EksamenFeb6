@@ -9,6 +9,10 @@
 </head>
 </html>
 
+<body id="Mainpage">
+
+</body>
+
 <?php
 
 
@@ -26,19 +30,24 @@ if ($link->connect_error) {
 <html>
 <h1>
     Hello and welcome!
+
 </h1>
+
+<li id="navbar"><a href="smartlager.php">Smartlager med HTTP Request GET</a></li>
+
 </html>
 
 <?php
-    $sql = "SELECT navn, beskrivelse, slagspris, Lagerstatus FROM reservedele";
+    $sql = "SELECT vareNum, navn, beskrivelse, slagspris, Lagerstatus FROM reservedele";
     $result = $link->query($sql);
  if ($result->num_rows > 0) {
-    echo "0 Results Found";
+
  }
-echo "<table><tr><th>Navn</th><th>Beskrivelse</th><th>Salgspris</th><th>Lagerstatus</th></tr>";
+echo "<table><tr><th> Varenummer</th><th>Navn</th><th>Beskrivelse</th><th>Salgspris</th><th>Lagerstatus</th></tr>";
 echo " <br><h4>Her er en Liste over relevant information omkring reservedele</h4><br>";
 while($row = $result->fetch_assoc()) {
 
-    echo "<tr><td>". $row["navn"]."</td><td> ". $row["beskrivelse"]."</td><td>". $row["slagspris"] . "</td><td>".$row["Lagerstatus"]." </td></tr>";
+    echo "<tr><td>".$row["vareNum"]."</td><td>". $row["navn"]."</td><td> ". $row["beskrivelse"]."</td><td>". $row["slagspris"] . "</td><td>".$row["Lagerstatus"]." </td></tr>";
 
 }
+
