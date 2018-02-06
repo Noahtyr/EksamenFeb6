@@ -913,7 +913,7 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="230" parent="226" name="passWord">
+    <column id="230" parent="226" name="password">
       <Position>2</Position>
       <DataType>varchar(64)|0</DataType>
       <NotNull>1</NotNull>
@@ -961,25 +961,36 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="228" name="Iphone">
+    <column id="238" parent="227" name="Hyldenummer">
+      <Position>8</Position>
+      <DataType>int(3)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="239" parent="227" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>vareNum</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="240" parent="228" name="Iphone">
       <Position>1</Position>
       <DataType>varchar(64)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="228" name="Samsung">
+    <column id="241" parent="228" name="Samsung">
       <Position>2</Position>
       <DataType>varchar(64)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="228" name="Nokia">
+    <column id="242" parent="228" name="Nokia">
       <Position>3</Position>
       <DataType>varchar(64)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="228" name="Huawei">
+    <column id="243" parent="228" name="Huawei">
       <Position>4</Position>
       <DataType>varchar(64)|0</DataType>
       <NotNull>1</NotNull>

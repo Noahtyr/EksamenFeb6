@@ -38,16 +38,16 @@ if ($link->connect_error) {
 </html>
 
 <?php
-    $sql = "SELECT vareNum, navn, beskrivelse, slagspris, Lagerstatus FROM reservedele";
+    $sql = "SELECT vareNum, navn, beskrivelse, slagspris, Hyldenummer, Lagerstatus FROM reservedele";
     $result = $link->query($sql);
  if ($result->num_rows > 0) {
 
  }
-echo "<table><tr><th> Varenummer</th><th>Navn</th><th>Beskrivelse</th><th>Salgspris</th><th>Lagerstatus</th></tr>";
+echo "<table><tr><th> Varenummer</th><th>Navn</th><th>Beskrivelse</th><th>Salgspris</th><th>Lagerstatus</th><th>Hyldenummer</th>  </tr>";
 echo " <br><h4>Her er en Liste over relevant information omkring reservedele</h4><br>";
 while($row = $result->fetch_assoc()) {
 
-    echo "<tr><td>".$row["vareNum"]."</td><td>". $row["navn"]."</td><td> ". $row["beskrivelse"]."</td><td>". $row["slagspris"] . "</td><td>".$row["Lagerstatus"]." </td></tr>";
+    echo "<tr><td>".$row["vareNum"]."</td><td>". $row["navn"]."</td><td> ". $row["beskrivelse"]."</td><td>". $row["slagspris"] . "</td><td>".$row["Lagerstatus"]." </td> <td>".$row["Hyldenummer"]."</td></tr>";
 
 }
 
