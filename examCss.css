@@ -1,0 +1,34 @@
+
+
+
+#welcome {
+    font-family: inherit;
+    text-align: center;
+}
+
+#loginbody {
+    background-image: url("http://www.techstation.com.au/wp-content/uploads/2016/04/mobile-phone-spare-parts2.jpg");
+    background-size: 485px, 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#loginform {
+    position: center;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+
+th {
+    border: 3px solid black;
+    background-color: lightblue;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+}
+
+tr {
+
+}
